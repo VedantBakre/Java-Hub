@@ -5,8 +5,6 @@
 
 ![Java](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge\&logo=openjdk)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![Learning](https://img.shields.io/badge/Learning-Java-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
