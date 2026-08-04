@@ -56,4 +56,4 @@ java -cp 01-Basics-and-Syntaxes HelloWorld
 ## 👨‍💻 Author
 
 **Vedant Bakre**  
-*First Year B.Tech – Computer Engineering (SPPU)*
+*Second Year B.Tech – Computer Engineering (SPPU)*
