@@ -96,17 +96,17 @@ public class test {
       
         StaffMember staff;
       
-        staff = new Professor("Dr. Smith", "Computer Science", "Data Structures");
+        staff = new Professor("Mrs. Gayatri Bendale", "Computer Science", "Java Programming");
         staff.displayRole();
         staff.duties();
         System.out.println();
 
-        staff = new Administrator("Ms. Johnson", "Administration", "Head of Operations");
+        staff = new Administrator("Mrs. Swati Bhavsar", "Computer Science", "Head of Operations");
         staff.displayRole();
         staff.duties();
         System.out.println();
 
-        staff = new Librarian("Mr. Davis", "Library", 5000);
+        staff = new Librarian("Mr. Atul", "Library", 5000);
         staff.displayRole();
         staff.duties();
     }
