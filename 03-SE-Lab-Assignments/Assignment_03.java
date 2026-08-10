@@ -44,7 +44,7 @@ class Library {
     }
 }
 
-class Main1 {
+class Assignment_03 {
 
     public static void main(String[] args) {
 
