@@ -10,6 +10,8 @@ store them in an array of Transport references (showing polymorphism), compute f
 and display per-booking and overall totals.
 */
 
+import java.util.Scanner;
+
 // Base class 
 abstract class Transport { 
     double distance; 
@@ -72,16 +74,45 @@ class Flight extends Transport {
 // Main class 
 public class Assignment_05 { 
     public static void main(String[] args) { 
-        Transport[] bookings = new Transport[3]; 
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of bookings: ");
+        int n = scanner.nextInt();
+        Transport[] bookings = new Transport[n]; 
 
-        bookings[0] = new Bus(100); 
-        bookings[1] = new Train(200, "Sleeper"); 
-        bookings[2] = new Flight(500, "Business"); 
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nBooking " + (i + 1) + ":");
+            System.out.println("1. Bus");
+            System.out.println("2. Train");
+            System.out.println("3. Flight");
+            System.out.print("Select transport type (1-3): ");
+            int type = scanner.nextInt();
+            
+            System.out.print("Enter distance (in km): ");
+            double distance = scanner.nextDouble();
+            scanner.nextLine(); // consume newline
+            
+            if (type == 1) {
+                bookings[i] = new Bus(distance);
+            } else if (type == 2) {
+                System.out.print("Enter travel class (Sleeper/AC): ");
+                String travelClass = scanner.nextLine();
+                bookings[i] = new Train(distance, travelClass);
+            } else if (type == 3) {
+                System.out.print("Enter travel class (Economy/Business): ");
+                String travelClass = scanner.nextLine();
+                bookings[i] = new Flight(distance, travelClass);
+            } else {
+                System.out.println("Invalid type. Defaulting to Bus.");
+                bookings[i] = new Bus(distance);
+            }
+        }
 
+        System.out.println("\n--- Fare Details ---");
         for (Transport t : bookings) { 
-            System.out.println("Fare: Rs. " + t.calculateFare()); 
+            System.out.println(t.getClass().getSimpleName() + " Fare: Rs. " + t.calculateFare()); 
         } 
+        
+        scanner.close();
     } 
 }
-
 }
