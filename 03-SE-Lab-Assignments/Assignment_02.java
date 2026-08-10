@@ -9,6 +9,9 @@
   4. Compute Interest
   5. Display */
 
+// Warning : Please Change the File name to BankSystem.java when running locally (File name and Class Name of Main Fun should be same in java)
+// Alternate way : change class name BankSystem to Assignment_02
+
 import java.util.Scanner;
 
 class BankSystem {
