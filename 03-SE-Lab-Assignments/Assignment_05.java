@@ -90,7 +90,7 @@ class Librarian extends StaffMember {
     }
 }
 
-public class Main {
+public class Assignment_05 {
 
     public static void main(String[] args) {
       
