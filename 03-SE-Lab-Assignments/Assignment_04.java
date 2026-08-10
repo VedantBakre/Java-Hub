@@ -68,7 +68,7 @@ class ContractEmployee extends Employee {
 }
 
 // Main Class
-public class Main {
+public class Assignment_04 {
     public static void main(String[] args) {
 
         // Runtime Polymorphism
