@@ -7,10 +7,10 @@ class Library {
 
     String name;
     int id;
-    int date;
+    String date;
     String author;
 
-    Library(String name, int id, int date, String author) {
+    Library(String name, int id, String date, String author) {
         this.name = name;
         this.id = id;
         this.date = date;
@@ -28,14 +28,14 @@ class Library {
         System.out.println("Book ID   : " + id);
     }
 
-    void display(String name, int id, int date) {
+    void display(String name, int id, String date) {
         System.out.println("\n-----Book Name, ID and Date-----");
         System.out.println("Book Name : " + name);
         System.out.println("Book ID   : " + id);
         System.out.println("Date      : " + date);
     }
 
-    void display(String name, int id, int date, String author) {
+    void display(String name, int id, String date, String author) {
         System.out.println("\n-----Book Name, ID, Date and Author-----");
         System.out.println("Book Name : " + name);
         System.out.println("Book ID   : " + id);
@@ -55,10 +55,10 @@ class Assignment_03 {
 
         System.out.print("Enter Book ID: ");
         int id = sc.nextInt();
+        sc.nextLine();
 
         System.out.print("Enter Date: ");
-        int date = sc.nextInt();
-        sc.nextLine(); // Consume the newline character
+        String date = sc.nextLine();
 
         System.out.print("Enter Author Name: ");
         String author = sc.nextLine();
