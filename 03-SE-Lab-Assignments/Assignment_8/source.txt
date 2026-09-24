@@ -1,0 +1,1 @@
+This is the Source file for Java Assignment 8, the code will simply copy this file and paste it into "destination.txt", if any error occurs it will generate "error.log"
