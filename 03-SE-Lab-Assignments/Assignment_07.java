@@ -1,3 +1,11 @@
+/*
+ * Problem Statement:
+ * Develop a Java program that creates two threads: one prints even numbers
+ * and the other prints odd numbers within a given range. Use appropriate
+ * synchronization to ensure outputs do not overlap. Include exception
+ * handling for invalid input ranges.
+ */
+
 import java.util.Scanner;
 
 class NumberPrinter {
